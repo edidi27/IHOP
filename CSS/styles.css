@@ -12,7 +12,21 @@
 
 
 .home_text {
-    display: block;
-    margin: 0 auto;
-    color:lightgreen
+    text-align: center;
+    color:lightgreen;
+    padding: 2em;
+    margin: 1em;
+    font-size: 1.25em; /*how do i make second line not wrap????*/
+    line-height: 1.5;
+    /*how do i make font size grow based on viewport??*/
 }
+
+footer {
+    text-align: center;
+}
+
+.explore {
+    text-align: center;
+}
+
+/* how do i make cursor show up as a knife?*/
