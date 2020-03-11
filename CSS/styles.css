@@ -1,32 +1,68 @@
 
+/*UNIVERSAL STYLES*/
 
-
-/*
-.home_text {
-    diplay: flex;
-    justify-content: center;
-    align-items: center;
-    color:lightgreen
-}
-*/
-
-
-.home_text {
+*{
     text-align: center;
+    
+}
+
+footer{
+    font-size: .75em;
+    font-weight: 300;
+}
+
+
+
+
+
+
+/*INDEX STYLES*/
+
+.title {
+    color: white;
+/*    font-size: ;   how do i make it grow?*/
+    padding: 5em;
+    background-image: url(../img/ihop.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+/*
+    border-color: lightgreen;
+    border-width: 30px;
+    why is this not working?
+*/
+}
+.home_text {
+/*    text-align: center;*/
     color:lightgreen;
     padding: 2em;
-    margin: 1em;
-    font-size: 1.25em; /*how do i make second line not wrap????*/
+    margin: 2.75em .2em;
+    font-size: 1em; /*how do i make second line not wrap????*/
     line-height: 1.5;
     /*how do i make font size grow based on viewport??*/
 }
 
-footer {
-    text-align: center;
+.nav_instructions{
+    margin-bottom: 2em;
+    font-weight: 300;
+    font-size: 1em;
+    /*make priority order of fonts*/
+    
 }
 
-.explore {
-    text-align: center;
-}
+.nav_bar li{
+    display: block;
+    background-color: lightgreen;
+    border-color: white;
+    padding: 1em;
+    margin: 1em;
+
+} /*why is the left starting position bigger??*/
+/* add :hover */
+/*make entire padded area clickable*/
 
 /* how do i make cursor show up as a knife?*/
+/*    cursor: url("../img/silver_knife.png"), auto;*/
+
+
+
