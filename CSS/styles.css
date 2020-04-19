@@ -3,7 +3,16 @@
 
 *{
     text-align: center;
-    
+}
+
+.nav_bar li{
+    display: block;
+    background-color: lightgreen;
+    border-color: white;
+    padding:1em;    /*makes whole block, and not just link, clickable, BUT IT'S NOT WORKING*/
+    margin: 1em;
+     /*why is the left starting position bigger??*/
+/* add :hover */
 }
 
 footer{
@@ -21,7 +30,8 @@ footer{
 .title {
     color: white;
 /*    font-size: ;   how do i make it grow?*/
-    padding: 5em;
+    padding: 3em;
+    background-color:lightgreen /*in case image doesn't load*/;
     background-image: url(../img/ihop.jpg);
     background-size: cover;
     background-position: center top;
@@ -35,8 +45,8 @@ footer{
 .home_text {
 /*    text-align: center;*/
     color:lightgreen;
-    padding: 2em;
-    margin: 2.75em .2em;
+    padding: 1em;
+    margin: 2em .2em;
     font-size: 1em; /*how do i make second line not wrap????*/
     line-height: 1.5;
     /*how do i make font size grow based on viewport??*/
@@ -50,19 +60,47 @@ footer{
     
 }
 
-.nav_bar li{
-    display: block;
-    background-color: lightgreen;
-    border-color: white;
-    padding: 1em;
-    margin: 1em;
 
-} /*why is the left starting position bigger??*/
-/* add :hover */
-/*make entire padded area clickable*/
+
 
 /* how do i make cursor show up as a knife?*/
 /*    cursor: url("../img/silver_knife.png"), auto;*/
 
 
+
+
+/*BURRITO STYLES*/
+
+/*!ADD FIXED POSITIONING!*/
+.burrito{
+    padding-right: 5em;
+    padding-bottom: 3em;
+    float: auto
+}
+
+.bubble {
+    padding-top: 3em;
+    padding-left: 10em;
+    float: auto;
+    max-width: 18em;
+}
+
+/*HOW DID I DIE STYLES*/
+
+
+/*JANET'S VOID STYLES*/
+
+.janet{
+    max-height: 3em;
+    /*why is this not workingg*/
+}
+
+
+
+/*MEDIA QUERIES*/
+/*MEDIA QUERIES FOR INDEX*/
+/*MEDIA QUERIES FOR BURRITO*/
+/*MEDIA QUERIES FOR JANET'S VOID*/
+/*MEDIA QUERIES FOR HOW YOU DIED*/
+/*MEDIA QUERIES FOR FROGS*/
 
