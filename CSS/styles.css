@@ -15,10 +15,37 @@
 /* add :hover */
 }
 
+.green_background{
+    background-color: lightgreen;
+}
+
 footer{
     font-size: .75em;
     font-weight: 300;
 }
+
+/*......nav with tabs......*/
+.main_header,
+.nav_bar_with_tabs{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style:none;
+    background-color: white;
+    color:lightgreen;
+    padding-left: .4em;
+    padding-right: .4em;
+}
+
+.nav_title{
+    font-size: 1.5em;
+}
+
+.nav_bar_with_tabs li{
+    margin-left: 1em;
+}
+
+
 
 
 
@@ -91,8 +118,8 @@ footer{
 /*JANET'S VOID STYLES*/
 
 .janet{
-    max-height: 3em;
-    /*why is this not workingg*/
+    max-height: 30em;
+    margin-top: 3em;
 }
 
 
