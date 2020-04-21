@@ -31,12 +31,17 @@
 footer{
     font-size: .75em;
     font-weight: 300;
+    color: white;
+}
+
+.sticky_footer{
+    min-height:calc(100vh - 38px);
 }
 
 /*......nav with tabs......*/
 .main_header,
 .nav_bar_with_tabs{
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     list-style:none;
@@ -119,6 +124,11 @@ footer{
     
 }
 
+#index_footer{
+    color: lightgreen;
+    font-weight: 300;
+}
+
 /*
 .nav_bar a{
     color: white;
@@ -149,6 +159,10 @@ footer{
     padding-left: 10em;
     float: auto;
     max-width: 18em;
+}
+
+#burrito_question{
+    color:dimgray;
 }
 
 /*HOW YOU DIED STYLES*/
