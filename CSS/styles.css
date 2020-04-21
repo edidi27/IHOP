@@ -19,6 +19,15 @@
     background-color: lightgreen;
 }
 
+.page_title{
+    background-color:lightgray;
+    color: white;
+    padding: .1em;
+    font-size: .9em;
+    /*how do I make padding smaller and raise div higher to cover up green space after header?*/
+
+}
+
 footer{
     font-size: .75em;
     font-weight: 300;
@@ -35,6 +44,7 @@ footer{
     color:lightgreen;
     padding-left: .4em;
     padding-right: .4em;
+    margin-bottom:0;
 }
 
 .nav_title{
@@ -45,7 +55,29 @@ footer{
     margin-left: 1em;
 }
 
+.supporting_pages a:link{
+    color:lightgreen;
+}
 
+.supporting_pages a:visited{
+    color:lightgray;
+}
+
+.supporting_pages a:visited:hover,
+.supporting_pages a:visited:active,
+.supporting_pages a:visited:focus{
+    color:white;
+    background-color:lightgreen;
+    /*how do i make the background color go from top to bottom of header, and not just directly around text?--> should target li*/
+}
+
+.supporting_pages a:link:hover,
+.supporting_pages a:link:active,
+.supporting_pages a:link:focus{
+    color:white;
+    background-color:lightgray;
+    
+}
 
 
 
