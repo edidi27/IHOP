@@ -148,21 +148,34 @@ footer{
 /*BURRITO STYLES*/
 
 /*!ADD FIXED POSITIONING!*/
+
+.burrito_container{
+    position: relative;
+}
+
 .burrito{
-    padding-right: 5em;
-    padding-bottom: 3em;
-    float: auto
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    max-width:15em;
 }
 
 .bubble {
-    padding-top: 3em;
-    padding-left: 10em;
-    float: auto;
-    max-width: 18em;
+    position: absolute;
+    bottom: 43%;
+    left: 40%;
+    max-width: 16em;
 }
 
 #burrito_question{
     color:dimgray;
+    position: absolute;
+}
+
+#speech{
+    position: absolute;
+    bottom: 20%;
+    
 }
 
 /*HOW YOU DIED STYLES*/
@@ -179,6 +192,7 @@ button{
     margin-top: 4em; /*how do you make sure it's exactly in the middle of the background space?*/
     border-radius: 100%;
     box-shadow: 9px 9px lightgray;
+    /*how do you make the shadow start after the border so that when you clock it, the whole border, and not just the half without the shadow, changes color?*/
 }
 
 
