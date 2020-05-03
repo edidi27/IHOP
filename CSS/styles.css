@@ -6,25 +6,10 @@
     text-align: center;
 }
 
-.nav_bar li{
-    display: block;
-    background-color: lightgreen;
-    border-color: white;
-    padding:1em;    /*makes whole block, and not just link, clickable, BUT IT'S NOT WORKING*/
-    margin: 1em;
-     /*why is the left starting position bigger??*/
-/* add :hover */
-}
-
-.green_background{
-    background-color: lightgreen;
-}
-
-.page_title{
-    background-color:lightgray;
+li:hover a,
+li:active a,
+li:focus a{
     color: white;
-    padding: .1em;
-    font-size: .9em;
 }
 
 footer{
@@ -37,7 +22,21 @@ footer{
     min-height:calc(100vh - 38px);
 }
 
-/*......nav on supporting pages......*/
+
+
+/* COMMON SUPPORTING PAGE STYLES*/
+
+.green_background{
+    background-color: lightgreen;
+}
+
+.page_title{
+    background-color:lightgray;
+    color: white;
+    padding: .1em;
+    font-size: .9em;
+}
+
 .main_header,
 .nav_bar_with_tabs{
     display: flex;
@@ -70,12 +69,6 @@ footer{
 .supporting_pages li:active,
 .supporting_pages li:focus{
     background-color:lightgreen;
-}
-
-li:hover a,
-li:active a,
-li:focus a{
-    color: white;
 }
 
 
@@ -113,6 +106,22 @@ li:focus a{
     font-size: 1em;
     /*make priority order of fonts*/
     
+}
+
+.nav_bar ul {
+    margin: 0;
+    padding: 0;
+    /*gets rid of default margin and padding*/
+}
+
+.nav_bar li{
+    display: block;
+    background-color: lightgreen;
+    border-color: white;
+    padding:1em;    /*makes whole block, and not just link, clickable, BUT IT'S NOT WORKING*/
+    margin: 1em;
+     /*why is the left starting position bigger??*/
+/* add :hover */
 }
 
 /*
