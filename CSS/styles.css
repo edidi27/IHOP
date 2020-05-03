@@ -25,8 +25,6 @@
     color: white;
     padding: .1em;
     font-size: .9em;
-    /*how do I make padding smaller and raise div higher to cover up green space after header?*/
-
 }
 
 footer{
@@ -39,7 +37,7 @@ footer{
     min-height:calc(100vh - 38px);
 }
 
-/*......nav with tabs......*/
+/*......nav on supporting pages......*/
 .main_header,
 .nav_bar_with_tabs{
     display: flex;
@@ -50,7 +48,8 @@ footer{
     color:lightgreen;
     padding-left: .4em;
     padding-right: .4em;
-    margin-bottom:0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .nav_title{
@@ -59,34 +58,25 @@ footer{
 
 .nav_bar_with_tabs li{
     margin-left: 1em;
+    display: flex;
+    align-items: center;
 }
 
-.supporting_pages a:link{
+.supporting_pages a{
     color:lightgreen;
 }
 
-.supporting_pages a:visited{
-    color:lightgray;
-}
-
 .supporting_pages li:hover,
-.supporting_pages a:visited:active,
-.supporting_pages a:visited:focus{
-    color:white;
+.supporting_pages li:active,
+.supporting_pages li:focus{
     background-color:lightgreen;
-    /*how do i make the background color go from top to bottom of header, and not just directly around text?--> should target li*/
 }
 
-.supporting_pages a:link:hover,
-.supporting_pages a:link:active,
-.supporting_pages a:link:focus{
-    color:white;
-    background-color:lightgray;
-    
+li:hover a,
+li:active a,
+li:focus a{
+    color: white;
 }
-
-
-
 
 
 
@@ -183,9 +173,24 @@ footer{
     margin-top: .75em;
 }
 
+#bubble_container{
+    position: relative;
+    text-align: center;
+    color: dimgray;
+}
 
+#bubble_container p{
+    position: absolute;
+    top: 21%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
-
+#burrito_btn{
+    background-color: lightgray;
+    color: white;
+    box-shadow: 0 0 5px #78746d;
+}
 
 /*HOW YOU DIED STYLES*/
 
@@ -240,11 +245,17 @@ footer{
     max-height: 30em;
 }
 
+#janet_container{
+    position: relative;
+    max-width: 600px;
+    left: calc(50vw - 200px);
+    margin-top: 5vh;
+}
+
 #janet_instructions{
-    display: float;
-    float: left;
-    margin-left: 2em;
-    margin-right: 10em;
+    position: absolute;
+    top: -5px;
+    left: -5px;
     color: darkgray;
     background-color: white;
     padding: 5px 30px;
@@ -259,6 +270,12 @@ footer{
     color: lightgreen;
     margin-top: 10vh;
 }
+
+/*
+.janet:hover{
+    border-bottom-color:#78746d;
+}
+*/
 
 #void_content button{
     background-color: lightgreen;
