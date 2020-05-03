@@ -40,12 +40,17 @@
 
                 <img class= "burrito" src="img/burrito.png" alt="The Almighty Burrito Image" title="The Almighty Burrito">
                 
-                <img class= "bubble" src="img/speech_bubble.png" alt="Speech Bubble">
+                <div id = bubble_container>
+                    <img class= "bubble" src="img/speech_bubble.png" alt="Speech Bubble">
+                    <p id= "speech_output"></p>
+                </div>
 
                 <!--USER INPUT-->
                 <h2 id="burrito_question">What do you want the almighty burrito <br> to say?</h2>
-                <input type="text" id="speech">
-                <p></p><!--js inner html write speech here, on top of speech bubble image (css)-->
+                
+                <input type="text" id="speech_input">
+                <button id= burrito_btn>Make burrito talk!</button>
+                
             </div>
         </div>
 
