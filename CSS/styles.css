@@ -1,4 +1,5 @@
 
+
 /*UNIVERSAL STYLES*/
 
 *{
@@ -68,7 +69,7 @@ footer{
     color:lightgray;
 }
 
-.supporting_pages a:visited:hover,
+.supporting_pages li:hover,
 .supporting_pages a:visited:active,
 .supporting_pages a:visited:focus{
     color:white;
@@ -124,10 +125,22 @@ footer{
     
 }
 
+/*
+.nav_bar {
+    cursor: url("silver_knive.png"), pointer, default;
+}
+*/
+
 #index_footer{
     color: lightgreen;
     font-weight: 300;
 }
+
+/* get rid of extra left margin on nav
+.nav_bar ul{
+    margin-left: 0px;
+}
+*/
 
 /*
 .nav_bar a{
@@ -145,63 +158,124 @@ footer{
 
 
 
+
 /*BURRITO STYLES*/
 
-/*!ADD FIXED POSITIONING!*/
-
 .burrito_container{
-    position: relative;
+    margin: 3em 1em 4em;
 }
 
 .burrito{
-    position: absolute;
-    top: 50%;
-    left: 15%;
-    max-width:15em;
+    max-width:13em;
 }
 
 .bubble {
-    position: absolute;
-    bottom: 43%;
-    left: 40%;
-    max-width: 16em;
+    max-width: 12em;
+    margin-bottom: 4.7em;
 }
 
 #burrito_question{
     color:dimgray;
-    position: absolute;
+    margin-top:1.8em;
 }
 
 #speech{
-    position: absolute;
-    bottom: 20%;
-    
+    margin-top: .75em;
 }
+
+
+
+
 
 /*HOW YOU DIED STYLES*/
 
-button{
+.death_btns{
     display: float;
     float: auto;
-    font-size: 2.7em;
     background-color: white;
     color: lightgreen;
-    border-color: lightgray;
+    border-color: darkgray;
     border-width: .1em;
     padding: .7em;
-    margin-top: 4em; /*how do you make sure it's exactly in the middle of the background space?*/
     border-radius: 100%;
-    box-shadow: 9px 9px lightgray;
-    /*how do you make the shadow start after the border so that when you clock it, the whole border, and not just the half without the shadow, changes color?*/
+    box-shadow: 0 0 10px #78746d;
+}
+
+#death_btn_1{
+    font-size: 2.7em;
+    margin-top: 4em;
+}
+
+
+#death_btn_2{
+    font-size: 1.2em;
+    margin-top: 1em;
+}
+
+#die_html_output{
+    color: darkgray;
+    align-content: center;
+    max-width: 90%;
+    margin: auto;
+    margin-top: 12vh;
+}
+
+#die_html_output p{
+    background-color:white;
+    padding: .5em;
+    box-shadow: 0 0 10px #78746d;
+}
+
+#die_html_output img{
+    margin-top: 2em;
+    max-width: 90%;
+    box-shadow: 0 0 15px #78746d;
+}
+
+
+
+/*VISIT JANET'S VOID STYLES*/
+
+.janet{
+    max-height: 30em;
+}
+
+#janet_instructions{
+    display: float;
+    float: left;
+    margin-left: 2em;
+    margin-right: 10em;
+    color: darkgray;
+    background-color: white;
+    padding: 5px 30px;
+    border-radius: 50%;
 }
 
 
 /*JANET'S VOID STYLES*/
-
-.janet{
-    max-height: 30em;
-    margin-top: 3em;
+    
+#void_content{
+    animation: leave_void 5s;
+    color: lightgreen;
+    margin-top: 10vh;
 }
+
+#void_content button{
+    background-color: lightgreen;
+    color: white;
+    box-shadow: 0 0 5px lightgray;
+}
+
+@keyframes leave_void{
+        0%{
+            opacity: 0;
+        }
+        50%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
 
 
 
