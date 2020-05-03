@@ -4,7 +4,14 @@
 /*take burrito user input and write over speech bubble */
 
 
-var burrito_input = document.getElementById("speech");
+var speech_input = document.getElementById("speech_input");
+var speech_output = document.getElementById("speech_output");
+var burrito_btn = document.getElementById("burrito_btn");
+
+burrito_btn.addEventListener("click", ()=>{
+    speech_output.innerHTML =  `${speech_input}`;
+});
+
 
 
 
