@@ -8,9 +8,9 @@ var speech_input = document.getElementById("speech_input");
 var speech_output = document.getElementById("speech_output");
 var burrito_btn = document.getElementById("burrito_btn");
 
-burrito_btn.addEventListener("click", ()=>{
-    speech_output.innerHTML =  `${speech_input}`;
-});
+//burrito_btn.addEventListener("click", ()=>{
+//    speech_output.innerHTML =  `${speech_input}`;
+//});
 
 
 
@@ -55,32 +55,16 @@ let gif = [
 
 var death_button = document.getElementById("death_btn_1");
 
-//death_button.addEventListener("click", ()=>{
-//    let death_index = Math.floor(Math.random()*COD.length);
-//    let gif_index = Math.floor(Math.random()*gif.length);
-//    document.getElementById('die_html_output').innerHTML = `<p> ${COD[death_index]} </p> ${gif[gif_index]}  <button type="button" class="death_btns id="death_btn_2">Discover <br> how your <br> friend died </button>`;
-//    document.getElementById('death_btn_1').style.display = 'none';
-//    });
-
-death_button.addEventListener("click", ()=>{
-    let death_index = Math.floor(Math.random()*COD.length);
-    let gif_index = Math.floor(Math.random()*gif.length);
-    document.getElementById('die_html_output').innerHTML = `<p> ${COD[death_index]} </p> ${gif[gif_index]}`;
-    document.getElementById('death_btn_1').style.display = 'none';
-    death_button= document.getElementById('new_die_button')
-    death_button.innerHTML = `<button type="button" class="death_btns id="death_btn_2">Discover <br> how your <br> friend died </button>`;
+[death_button, new_die_button].forEach(function(element){
+    element.addEventListener("click", ()=>{
+        let death_index = Math.floor(Math.random()*COD.length);
+        let gif_index = Math.floor(Math.random()*gif.length);
+        document.getElementById('die_html_output').innerHTML = `<p> ${COD[death_index]} </p> ${gif[gif_index]}`;
+        document.getElementById('death_btn_1').style.display = 'none';
+        new_die_button= document.getElementById('new_die_button');
+        new_die_button.innerHTML = `<button type="button" class="death_btns id="death_btn_2">Discover <br> how your <br> friend died </button>`;
+    });
 });
-
-
-
-//function dynamicEvent(){
-//    console.log("Event happened");
-//}
-//
-//var element = document.createElement('p');
-//element.innerHTML= JS TEXT IS HERRE;
-//element.onclick = dynamicEvent;
-
 
 
 //JANET'S VOID
