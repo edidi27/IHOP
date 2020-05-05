@@ -42,7 +42,7 @@ var new_die_button= document.getElementById('new_die_button');
         let gif_index = Math.floor(Math.random()*gif.length);
         document.getElementById('die_html_output').innerHTML = `<p> ${COD[death_index]} </p> ${gif[gif_index]}`;
         document.getElementById('death_btn_1').style.display = 'none';
-        new_die_button.innerHTML = `<button type="button" class="death_btns id="death_btn_2">Discover <br> how your <br> friend died </button>`;
+        new_die_button.innerHTML = `<button type="button" class="death_btns id="death_btn_2">&nbsp Reincarnate <br> and <br> try again </button>`;
     });
 });
 
