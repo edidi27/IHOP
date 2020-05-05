@@ -75,7 +75,6 @@ footer{
 
 .title {
     color: white;
-/*    font-size: ;   how do i make it grow?*/
     padding: 3em;
     background-color:lightgreen /*in case image doesn't load*/;
     background-image: url(../img/ihop.jpg);
@@ -85,21 +84,17 @@ footer{
 }
 
 .home_text {
-/*    text-align: center;*/
     color:lightgreen;
     padding: 1em;
     margin: 2em .2em;
-    font-size: 1em; /*how do i make second line not wrap????*/
+    font-size: 1em;
     line-height: 1.5;
-    /*how do i make font size grow based on viewport??*/
 }
 
 .nav_instructions{
     margin-bottom: 2em;
     font-weight: 300;
     font-size: 1em;
-    /*make priority order of fonts*/
-    
 }
 
 .nav_bar ul {
@@ -117,12 +112,6 @@ footer{
 }
 
 
-/*
-.nav_bar {
-    cursor: url("silver_knive.png"), pointer, default;
-}
-*/
-
 #index_footer{
     color: lightgreen;
     font-weight: 300;
@@ -133,6 +122,11 @@ footer{
 /* how do i make cursor show up as a knife?*/
 /*    cursor: url("../img/silver_knife.png"), auto;*/
 
+/*
+.nav_bar {
+    cursor: url("silver_knive.png"), pointer, default;
+}
+*/
 
 
 
@@ -155,10 +149,7 @@ footer{
 #burrito_question{
     color:dimgray;
     margin-top:1.8em;
-}
-
-#speech{
-    margin-top: .75em;
+    margin-bottom:1.5em;
 }
 
 #bubble_container{
@@ -203,18 +194,18 @@ footer{
     margin-top: 4em;
 }
 
-
-#death_btn_2{
-    font-size: 1.2em;
+#new_die_button{
+    display: inline-block;
 }
+
 
 #die_html_output{
     color: darkgray;
     align-content: center;
     max-width: 90%;
     margin: auto;
-    margin-top: 10vh;
-    margin-bottom: 1em;
+    margin-top: 5.8vh;
+    margin-bottom: 1.5em;
 }
 
 #die_html_output p{
@@ -224,9 +215,9 @@ footer{
 }
 
 #die_html_output img{
-    margin-top: 2em;
+    margin-top: 1.7em;
     max-width: 90vw;
-    max-height: 40vh;
+    max-height: 35vh;
     box-shadow: 0 0 15px #78746d;
 }
 
@@ -259,7 +250,7 @@ footer{
 /*JANET'S VOID STYLES*/
     
 #void_content{
-    animation: leave_void 5s;
+    animation: leave_void 5s; /*keyframes at bottom of page*/
     color: lightgreen;
     margin-top: 10vh;
 }
@@ -276,6 +267,81 @@ footer{
     box-shadow: 0 0 5px lightgray;
 }
 
+
+
+/*MEDIA QUERIES*/
+    
+
+@media screen and (min-width:550px){
+    
+    /*INDEX*/
+    
+    .home_text {
+        font-size: 1.2em;
+        margin-top: 1em;
+    }
+    
+    .nav_instructions{
+        margin-top: 2em;
+    }
+    
+    .nav_bar {
+        white-space: nowrap;
+    }
+    
+    .nav_bar li {
+        display: inline-block;
+    }
+    
+    .nav_bar a {
+        padding: 1.5em;
+        margin-top: 2em;
+    }
+    
+    /*HOW YOU DIED*/
+    
+    #die_html_output{
+        max-width: 590px;
+    }
+    
+}
+
+@media screen and (min-width:692px){
+    
+    /*INDEX*/
+    
+    .nav_bar a {
+        padding: 2em;
+    }
+}
+
+@media screen and (min-width:700px){
+
+    /*BURRITO*/
+    
+    .burrito_container{
+        margin-top: 4.7em;
+    }
+    
+    /*HOW YOU DIED*/
+    
+    #die_html_output{
+        margin-top: 7vh;
+    }
+}
+
+@media screen and (min-width:759px){
+    
+    /*VISIT JANET'S VOID: has own media query because nav title changes to one line at different screen size*/
+    
+    #janet_container{
+        margin-top: 3.8em;
+    }
+}
+
+
+
+/*JANET'S VOID ANIMATION*/
 @keyframes leave_void{
         0%{
             opacity: 0;
@@ -286,13 +352,3 @@ footer{
         100%{
             opacity: 1;
         }
-
-
-
-/*MEDIA QUERIES*/
-/*MEDIA QUERIES FOR INDEX*/
-/*MEDIA QUERIES FOR BURRITO*/
-/*MEDIA QUERIES FOR JANET'S VOID*/
-/*MEDIA QUERIES FOR HOW YOU DIED*/
-/*MEDIA QUERIES FOR FROGS*/
-
