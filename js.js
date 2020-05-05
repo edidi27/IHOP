@@ -1,20 +1,21 @@
 
-
 //BURRITO
 /*take burrito user input and write over speech bubble */
 
 
-var speech_input = document.getElementById("speech_input");
 var speech_output = document.getElementById("speech_output");
 var burrito_btn = document.getElementById("burrito_btn");
+var speech_input_enter_key = document.getElementById("speech_input");
 
-//burrito_btn.addEventListener("click", ()=>{
-//    speech_output.innerHTML =  `${speech_input}`;
-//});
+function submitOnClickOrEnter(e){
+    if(e.type === "click" || e.keyCode === 13){
+        var speech_input_value = document.getElementById("speech_input").value;
+        speech_output.innerHTML =  speech_input_value;
+    }
+};
 
-
-
-
+burrito_btn.addEventListener("click", submitOnClickOrEnter);
+speech_input_enter_key.addEventListener("keyup", submitOnClickOrEnter);
 
 
 
@@ -51,20 +52,18 @@ let gif = [
     /*12*/'<img src="img/RIPgifs/giphy(12).gif" alt="Gif reaction">',
     /*13*/'<img src="img/RIPgifs/giphy(13).gif" alt="Gif reaction">'
     ];
+//
+//var death_button = document.getElementById("death_btn_1");
+//var new_die_button= document.getElementById('new_die_button');
+//
+//[death_button, new_die_button].forEach(function(element){
+//    element.addEventListener("click", ()=>{
+//        let death_index = Math.floor(Math.random()*COD.length);
+//        let gif_index = Math.floor(Math.random()*gif.length);
+//        document.getElementById('die_html_output').innerHTML = `<p> ${COD[death_index]} </p> ${gif[gif_index]}`;
+//        document.getElementById('death_btn_1').style.display = 'none';
+//        new_die_button.innerHTML = `<button type="button" class="death_btns id="death_btn_2">Discover <br> how your <br> friend died </button>`;
+//    });
+//});
+//
 
-
-var death_button = document.getElementById("death_btn_1");
-
-[death_button, new_die_button].forEach(function(element){
-    element.addEventListener("click", ()=>{
-        let death_index = Math.floor(Math.random()*COD.length);
-        let gif_index = Math.floor(Math.random()*gif.length);
-        document.getElementById('die_html_output').innerHTML = `<p> ${COD[death_index]} </p> ${gif[gif_index]}`;
-        document.getElementById('death_btn_1').style.display = 'none';
-        new_die_button= document.getElementById('new_die_button');
-        new_die_button.innerHTML = `<button type="button" class="death_btns id="death_btn_2">Discover <br> how your <br> friend died </button>`;
-    });
-});
-
-
-//JANET'S VOID

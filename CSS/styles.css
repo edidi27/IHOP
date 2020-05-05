@@ -108,14 +108,12 @@ footer{
     /*gets rid of default margin and padding*/
 }
 
-.nav_bar li{
+.nav_bar a{
     display: block;
     background-color: lightgreen;
     border-color: white;
-    padding:1em;    /*makes whole block, and not just link, clickable, BUT IT'S NOT WORKING*/
+    padding:1em;
     margin: 1em;
-    height: 100%;
-    width: 100%;
 }
 
 
