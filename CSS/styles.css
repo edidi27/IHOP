@@ -267,7 +267,7 @@ footer{
     /*INDEX*/
     
     .home_text {
-        font-size: 1.2em;
+        font-size: 1.2rem;
         margin-top: 1em;
     }
     
@@ -290,7 +290,7 @@ footer{
     
     /*HOW YOU DIED*/
     
-    #die_html_output{
+    #die_html_output {
         max-width: 590px;
     }
     
