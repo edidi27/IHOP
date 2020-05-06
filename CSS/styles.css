@@ -37,37 +37,37 @@ footer{
     font-size: .9em;
 }
 
-.main_header,
+.main_header{
+    color:lightgreen;
+    background-color: white;
+    padding-top: 1em;
+}
+
 .nav_bar_with_tabs{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     list-style:none;
+    padding: 1em;
+    margin:0;
     background-color: white;
-    color:lightgreen;
-    padding-left: .4em;
-    padding-right: .4em;
-    margin: 0;
 }
 
 .nav_title{
-    font-size: 1.5em;
+    font-size: 2em;
+    margin: 0 .5em;
 }
 
 .nav_bar_with_tabs li{
-    margin-left: 1em;
     display: flex;
+    box-shadow: 0 0 2.5px #78746d;
+    background-color: lightgreen;
 }
 
 .supporting_pages a{
-    color:lightgreen;
+    color:white;
     flex-grow: 1;
-}
-
-.supporting_pages li:hover,
-.supporting_pages li:active,
-.supporting_pages li:focus{
-    background-color:lightgreen;
+    padding: .5em
 }
 
 
@@ -134,11 +134,11 @@ footer{
 }
 
 .burrito{
-    max-width:13em;
+    max-width:10em;
 }
 
 .bubble {
-    max-width: 12em;
+    max-width: 10em;
     margin-bottom: 4.7em;
 }
 
@@ -157,7 +157,7 @@ footer{
 
 #bubble_container p{
     position: absolute;
-    top: 21%;
+    top: 18%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -227,21 +227,25 @@ footer{
 
 #janet_container{
     position: relative;
-    max-width: 600px;
-    left: calc(50vw - 200px);
+    max-width: screen;
+    left: calc(50vw - 135px);
     margin-top: 5vh;
 }
 
 #janet_instructions{
     position: absolute;
     top: -5px;
-    left: -5px;
+    left: -46px;
     color: darkgray;
     background-color: white;
     padding: 5px 30px;
     border-radius: 50%;
+    font-size: 16px;
 }
 
+#janet_container a:hover{
+    background-color: darkgray;
+}
 
 /*JANET'S VOID STYLES*/
     
@@ -261,6 +265,79 @@ footer{
 
 /*MEDIA QUERIES*/
     
+
+@media screen and (min-width: 425px){
+    
+    /*NAV BAR ON SUPPORTING PAGES*/
+    
+    .main_header,
+    .nav_bar_with_tabs{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        list-style:none;
+        background-color: white;
+        color:lightgreen;
+        padding: 0;
+        margin: 0;
+        align-items: center;
+    }
+    
+    .main_header{
+        padding: 0;
+    }
+    
+    .nav_bar_with_tabs li{
+        margin-left: 0;
+        box-shadow: none;
+        padding: 0;
+        background-color: white;
+    }
+    
+    .supporting_pages a{
+        color:lightgreen;
+        padding: 1em;
+    }
+    
+    .supporting_pages li:hover,
+    .supporting_pages li:active,
+    .supporting_pages li:focus{
+        background-color:lightgreen;
+    }
+    
+    .nav_title{
+        margin: default;
+        font-size: 1.5em;
+        text-shadow: none;
+    }
+    
+    /*BURRITO*/
+    
+    .burrito{
+        max-width:13em;
+    }
+
+    .bubble {
+        max-width: 12em;
+        margin-bottom: 4.7em;
+    }
+    
+    #bubble_container p{
+        top: 21%;
+    }
+    
+    /*VISIT JANET'S VOID*/
+    #janet_container{
+        max-width: 600px;
+        left: calc(50vw - 200px);
+    }
+    
+    #janet_instructions{
+        font-size: 18.72px;
+        top: -5px;
+        left: -5px;
+    }
+}
 
 @media screen and (min-width:550px){
     
@@ -293,8 +370,8 @@ footer{
     #die_html_output {
         max-width: 590px;
     }
-    
 }
+
 
 @media screen and (min-width:692px){
     
